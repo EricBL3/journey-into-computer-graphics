@@ -1,13 +1,13 @@
 Application Log
-Start: Thu Oct 12 18:16:09 2023
+Start: Thu Oct 12 18:35:03 2023
 
 WARNING: AudioDevice is not enabled. Set G3DSpecification::audio = true before invoking initGLG3D() to enable audio.
-Initializing System::findDataFile took 0.000800s
+Initializing System::findDataFile took 0.000815s
 
 Entering GApp::GApp()
 cwd = C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files
 System::setAppDataDir("C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files")
-System::setAppDataDirs()Initializing System::findDataFile took 0.000109s
+System::setAppDataDirs()Initializing System::findDataFile took 0.000120s
 Setting video mode
 wglSwapIntervalEXT(0);
 Setting initial rendering state.
@@ -614,6 +614,7 @@ Done GApp::loadFont(...)
 Done GApp::GApp()
 
 Found scenes:
+  "White Cube" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/whiteCube.Scene.Any)
   "Test Scene" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/test.Scene.Any)
   "G3D Debug Animation (Skeletal)" (C:\g3d\data10\common/scene/G3D_Debug_Animation_(Skeletal).Scene.Any)
   "G3D Debug Area Light (Glossy)" (C:\g3d\data10\common/scene/G3D_Debug_Area_Light_(Glossy).Scene.Any)
@@ -685,6 +686,7 @@ Found scenes:
   "G3D VR Bedroom" (C:\g3d\data10\research/scene/G3D_VR_Bedroom.Scene.Any)
   "G3D VR Gallery" (C:\g3d\data10\research/scene/G3D_VR_Gallery.Scene.Any)
 Found scenes:
+  "White Cube" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/whiteCube.Scene.Any)
   "Test Scene" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/test.Scene.Any)
   "G3D Debug Animation (Skeletal)" (C:\g3d\data10\common/scene/G3D_Debug_Animation_(Skeletal).Scene.Any)
   "G3D Debug Area Light (Glossy)" (C:\g3d\data10\common/scene/G3D_Debug_Area_Light_(Glossy).Scene.Any)
@@ -799,10 +801,9 @@ Fragment info
 
 
 
-
-
 Vertex info
 -----------
+1(39) : warning C7050: "tex0" might be used before being initialized
 1(39) : warning C7050: "tex1" might be used before being initialized
 
 
@@ -832,6 +833,7 @@ swscale-5.dll
 fmod.dll
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/icon.png
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/log.txt
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/scene/whiteCube.Scene.Any
 C:/g3d/G3D10/data-files/font/arial.fnt
 C:/g3d/G3D10/data-files/font/console-small.fnt
 C:/g3d/G3D10/data-files/font/greek.fnt
@@ -872,9 +874,6 @@ C:/g3d/G3D10/data-files/shader/GuiTheme/GuiTheme_render.vrt
 C:/g3d/G3D10/data-files/shader/Light/Light.glsl
 C:/g3d/G3D10/data-files/shader/LightingEnvironment/LightingEnvironment_LightUniforms.glsl
 C:/g3d/G3D10/data-files/shader/LightingEnvironment/LightingEnvironment_environmentMapUniforms.glsl
-C:/g3d/G3D10/data-files/shader/MotionBlur/MotionBlur_gather.pix
-C:/g3d/G3D10/data-files/shader/MotionBlur/MotionBlur_neighborMinMax.pix
-C:/g3d/G3D10/data-files/shader/MotionBlur/MotionBlur_tileMinMax.pix
 C:/g3d/G3D10/data-files/shader/SkyboxSurface/SkyboxSurface_gbuffer.pix
 C:/g3d/G3D10/data-files/shader/SkyboxSurface/SkyboxSurface_gbuffer.vrt
 C:/g3d/G3D10/data-files/shader/TemporalFilter/TemporalFilter_apply.pix
@@ -915,8 +914,12 @@ C:/g3d/data10/common/cubemap/uffizi/uffizi+z.jpg
 C:/g3d/data10/common/cubemap/uffizi/uffizi-x.jpg
 C:/g3d/data10/common/cubemap/uffizi/uffizi-y.jpg
 C:/g3d/data10/common/cubemap/uffizi/uffizi-z.jpg
-C:/g3d/data10/common/ifs/icosa.ifs
-C:/g3d/data10/common/ifs/lucy.ply
+C:/g3d/data10/common/cubemap/whiteroom/whiteroom-NX.png
+C:/g3d/data10/common/cubemap/whiteroom/whiteroom-NY.png
+C:/g3d/data10/common/cubemap/whiteroom/whiteroom-NZ.png
+C:/g3d/data10/common/cubemap/whiteroom/whiteroom-PX.png
+C:/g3d/data10/common/cubemap/whiteroom/whiteroom-PY.png
+C:/g3d/data10/common/cubemap/whiteroom/whiteroom-PZ.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.ArticulatedModel.Any
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/sponza.mtl
@@ -926,7 +929,6 @@ C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/background_bump.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/chain_texture.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/chain_texture_bump.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/chain_texture_mask.png
-C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/floor_gloss.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/floor_gloss.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/lion.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/lion_bump.png
@@ -948,9 +950,7 @@ C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_details_diff
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_fabric_blue_diff.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_fabric_diff.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_fabric_green_diff.png
-C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_fabric_purple.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_flagpole_diff.png
-C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_floor_a_diff.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_floor_a_diff.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_roof_diff.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_thorn_bump.png
@@ -963,12 +963,8 @@ C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_plant.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_plant_mask.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_round.png
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_round_bump.png
+C:/g3d/data10/common/model/cube/cube.obj
+C:/g3d/data10/common/model/cube/default.mtl
+C:/g3d/data10/common/model/cube/default.png
 C:/g3d/data10/common/scene/G3D_Sponza.Scene.Any
-C:/g3d/data10/research/cubemap/sponza(statue)/cube-NX.png
-C:/g3d/data10/research/cubemap/sponza(statue)/cube-NY.png
-C:/g3d/data10/research/cubemap/sponza(statue)/cube-NZ.png
-C:/g3d/data10/research/cubemap/sponza(statue)/cube-PX.png
-C:/g3d/data10/research/cubemap/sponza(statue)/cube-PY.png
-C:/g3d/data10/research/cubemap/sponza(statue)/cube-PZ.png
-C:/g3d/data10/research/scene/G3D_Sponza_(Statue_Glossy).Scene.Any
 
