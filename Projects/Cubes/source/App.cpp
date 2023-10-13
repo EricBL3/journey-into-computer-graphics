@@ -96,7 +96,9 @@ void App::onInit() {
     makeGUI();
 }
 
-
+/**
+* makes the gui window.
+*/
 void App::makeGUI() {
     debugWindow->setVisible(true);
     developerWindow->videoRecordDialog->setEnabled(true);
