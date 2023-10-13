@@ -1,7 +1,7 @@
 /** \file App.cpp */
 #include "App.h"
 
-// Tells C++ to invoke command-line main() function even on OS X and Win32.
+/** Tells C++ to invoke command - line main() function even on OS X and Win32.*/
 G3D_START_AT_MAIN();
 
 int main(int argc, const char* argv[]) {
@@ -66,11 +66,14 @@ App::App(const GApp::Settings& settings) : GApp(settings) {
 }
 
 
-// Called before the application loop begins.  Load data here and
+/** Called before the application loop begins.  Load data here and
 // not in the constructor so that common exceptions will be
 // automatically caught.
+*/
 void App::onInit() {
     GApp::onInit();
+
+    debugPrintf("Target frame rate = %f Hz\n", 1.0f / realTimeTargetDuration());
 
     setFrameDuration(1.0f / 240.0f);
 

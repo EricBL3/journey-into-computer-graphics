@@ -1,4 +1,9 @@
 // -*- C++ -*-
+/** \file whiteCube.Secen.Any */
+
+/**
+* Setup of a white cube scene.
+*/
 {
     name = "White Cube";
 
