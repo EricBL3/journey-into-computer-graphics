@@ -1,13 +1,13 @@
 Application Log
-Start: Wed Oct 25 18:10:46 2023
+Start: Sat Oct 28 16:18:46 2023
 
 WARNING: AudioDevice is not enabled. Set G3DSpecification::audio = true before invoking initGLG3D() to enable audio.
-Initializing System::findDataFile took 0.001548s
+Initializing System::findDataFile took 0.001358s
 
 Entering GApp::GApp()
 cwd = C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files
 System::setAppDataDir("C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files")
-System::setAppDataDirs()Initializing System::findDataFile took 0.000973s
+System::setAppDataDirs()Initializing System::findDataFile took 0.000917s
 Setting video mode
 wglSwapIntervalEXT(0);
 Setting initial rendering state.
@@ -615,6 +615,7 @@ Done GApp::GApp()
 
 Found scenes:
   "Cornell Box" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/cornellBox.Scene.Any)
+  "Staircase" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/staircase.Scene.Any)
   "White Cube" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/whiteCube.Scene.Any)
   "Test Scene" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/test.Scene.Any)
   "G3D Debug Animation (Skeletal)" (C:\g3d\data10\common/scene/G3D_Debug_Animation_(Skeletal).Scene.Any)
@@ -688,6 +689,7 @@ Found scenes:
   "G3D VR Gallery" (C:\g3d\data10\research/scene/G3D_VR_Gallery.Scene.Any)
 Found scenes:
   "Cornell Box" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/cornellBox.Scene.Any)
+  "Staircase" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/staircase.Scene.Any)
   "White Cube" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/whiteCube.Scene.Any)
   "Test Scene" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/test.Scene.Any)
   "G3D Debug Animation (Skeletal)" (C:\g3d\data10\common/scene/G3D_Debug_Animation_(Skeletal).Scene.Any)
@@ -763,7 +765,6 @@ Found scenes:
 
 
 
-
 Vertex info
 -----------
 1(39) : warning C7050: "tex0" might be used before being initialized
@@ -786,64 +787,6 @@ Vertex info
 
 
 
-
-
-
-
-
-
-G3D Inserted Code(21) : warning C7508: extension NV_shader_buffer_store not supported
-Compute info
-------------
-0(21) : warning C7508: extension NV_shader_buffer_store not supported
-
-G3D Inserted Code(21) : warning C7508: extension NV_shader_buffer_store not supported
-Compute info
-------------
-0(21) : warning C7508: extension NV_shader_buffer_store not supported
-
-
-G3D Inserted Code(21) : warning C7508: extension NV_shader_buffer_store not supported
-Compute info
-------------
-0(21) : warning C7508: extension NV_shader_buffer_store not supported
-
-
-G3D Inserted Code(21) : warning C7508: extension NV_shader_buffer_store not supported
-Compute info
-------------
-0(21) : warning C7508: extension NV_shader_buffer_store not supported
-
-G3D Inserted Code(21) : warning C7508: extension NV_shader_buffer_store not supported
-Compute info
-------------
-0(21) : warning C7508: extension NV_shader_buffer_store not supported
-
-G3D Inserted Code(21) : warning C7508: extension NV_shader_buffer_store not supported
-Compute info
-------------
-0(21) : warning C7508: extension NV_shader_buffer_store not supported
-
-G3D Inserted Code(21) : warning C7508: extension NV_shader_buffer_store not supported
-Compute info
-------------
-0(21) : warning C7508: extension NV_shader_buffer_store not supported
-
-
-
-G3D Inserted Code(21) : warning C7508: extension NV_shader_buffer_store not supported
-Compute info
-------------
-0(21) : warning C7508: extension NV_shader_buffer_store not supported
-
-
-G3D Inserted Code(21) : warning C7508: extension NV_shader_buffer_store not supported
-Compute info
-------------
-0(21) : warning C7508: extension NV_shader_buffer_store not supported
-
-
-
 _____________________________________________________
 
     ###    Files Used    ###
@@ -862,13 +805,15 @@ postproc-55.dll
 swresample-3.dll
 swscale-5.dll
 fmod.dll
-C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/2023-10-25__003.jpg
-C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/2023-10-25__003_Cornell_box.jpg
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/2023-10-28__001.jpg
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/2023-10-28__001_Final_staircase_image.jpg
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/journal.md.html
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/journal.md.html
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/icon.png
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/log.txt
-C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/scene/cornellBox.Scene.Any
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/scene/staircase.Scene.Any
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/scene/staircase.Scene.Any
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/texture/wood.png
 C:/g3d/G3D10/data-files/font/arial.fnt
 C:/g3d/G3D10/data-files/font/console-small.fnt
 C:/g3d/G3D10/data-files/font/greek.fnt
@@ -888,20 +833,12 @@ C:/g3d/G3D10/data-files/shader/AmbientOcclusion/AmbientOcclusion_reconstructCSZ.
 C:/g3d/G3D10/data-files/shader/AmbientOcclusion/AmbientOcclusion_reconstructCSZ.vrt
 C:/g3d/G3D10/data-files/shader/BumpMap/BumpMap.glsl
 C:/g3d/G3D10/data-files/shader/Camera/Camera.glsl
-C:/g3d/G3D10/data-files/shader/DDGIVolume/../DDGIVolume/DDGIVolume.glsl
 C:/g3d/G3D10/data-files/shader/DDGIVolume/DDGIVolume.glsl
-C:/g3d/G3D10/data-files/shader/DDGIVolume/DDGIVolume_EncodeDDGIDistance.glc
-C:/g3d/G3D10/data-files/shader/DDGIVolume/DDGIVolume_computeProbeOffsets.glc
-C:/g3d/G3D10/data-files/shader/DDGIVolume/DDGIVolume_copyProbeEdges.glc
-C:/g3d/G3D10/data-files/shader/DDGIVolume/DDGIVolume_generateRays.glc
-C:/g3d/G3D10/data-files/shader/DDGIVolume/DDGIVolume_updateProbeFlags.glc
-C:/g3d/G3D10/data-files/shader/DDGIVolume/DDGIVolume_updateProbes.glc
 C:/g3d/G3D10/data-files/shader/DefaultRenderer/DefaultRenderer_deferredShade.pix
 C:/g3d/G3D10/data-files/shader/Film/Film_FXAA_13_quality.pix
 C:/g3d/G3D10/data-files/shader/Film/Film_bloomExpose.pix
 C:/g3d/G3D10/data-files/shader/Film/Film_composite.pix
 C:/g3d/G3D10/data-files/shader/Film/Film_effectsDisabledBlit.pix
-C:/g3d/G3D10/data-files/shader/Film/Film_temporalAA.pix
 C:/g3d/G3D10/data-files/shader/Film/Film_toneMap.glsl
 C:/g3d/G3D10/data-files/shader/GBuffer/GBuffer.glsl
 C:/g3d/G3D10/data-files/shader/GFont/GFont_render.pix
@@ -941,27 +878,15 @@ C:/g3d/G3D10/data-files/shader/reverseReprojection.glsl
 C:/g3d/G3D10/data-files/shader/textureFilter.glsl
 C:/g3d/G3D10/data-files/shader/unlit.pix
 C:/g3d/G3D10/data-files/shader/unlit.vrt
-C:/g3d/data10/common/cubemap/cornellbox/empty-RG-NX.png
-C:/g3d/data10/common/cubemap/cornellbox/empty-RG-NY.png
-C:/g3d/data10/common/cubemap/cornellbox/empty-RG-NZ.png
-C:/g3d/data10/common/cubemap/cornellbox/empty-RG-PX.png
-C:/g3d/data10/common/cubemap/cornellbox/empty-RG-PY.png
-C:/g3d/data10/common/cubemap/cornellbox/empty-RG-PZ.png
 C:/g3d/data10/common/cubemap/whiteroom/whiteroom-NX.png
 C:/g3d/data10/common/cubemap/whiteroom/whiteroom-NY.png
 C:/g3d/data10/common/cubemap/whiteroom/whiteroom-NZ.png
 C:/g3d/data10/common/cubemap/whiteroom/whiteroom-PX.png
 C:/g3d/data10/common/cubemap/whiteroom/whiteroom-PY.png
 C:/g3d/data10/common/cubemap/whiteroom/whiteroom-PZ.png
-C:/g3d/data10/common/font/eurostyle.fnt
-C:/g3d/data10/common/model/CornellBox/CornellBox.zip
-C:/g3d/data10/common/model/CornellBox/CornellBox.zip/CornellBox-Original.mtl
-C:/g3d/data10/common/model/CornellBox/CornellBox.zip/CornellBox-Original.obj
-C:/g3d/data10/common/model/cube/cube.obj
-C:/g3d/data10/common/model/cube/default.mtl
-C:/g3d/data10/common/model/cube/default.png
-C:/g3d/data10/common/scene/G3D_Simple_Cornell_Box_(Area_Light).Scene.Any
-C:/g3d/data10/research/model/sphere/sphere.zip
-C:/g3d/data10/research/model/sphere/sphere.zip/default.mtl
-C:/g3d/data10/research/model/sphere/sphere.zip/sphere-cylcoords-1k.obj
+C:/g3d/data10/game/model/crate/crate.mtl
+C:/g3d/data10/game/model/crate/crate.obj
+C:/g3d/data10/game/model/crate/metalcrate-B.png
+C:/g3d/data10/game/model/crate/metalcrate-G.png
+C:/g3d/data10/game/model/crate/metalcrate-L.png
 

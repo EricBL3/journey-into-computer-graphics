@@ -6,6 +6,7 @@
  */
 #pragma once
 #include <G3D/G3D.h>
+#include <cmath>
 
 /** \brief Application framework. */
 class App : public GApp {
@@ -33,4 +34,5 @@ public:
     virtual bool onEvent(const GEvent& e) override;
     virtual void onUserInput(UserInput* ui) override;
     virtual void onCleanup() override;
+    void generateStaircaseFile();
 };

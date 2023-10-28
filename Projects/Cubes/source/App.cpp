@@ -82,12 +82,14 @@ void App::onInit() {
     
     showRenderingStats      = false;
 
+    generateStaircaseFile();
+
     loadScene(
 
 #       ifndef G3D_DEBUG
         "G3D Sponza"
 #       else
-        "G3D Simple Cornell Box (Area Light)" // Load something simple
+        "Staircase" // Load something simple
 #       endif
         );
 
@@ -328,4 +330,62 @@ void App::onGraphics2D(RenderDevice* rd, Array<shared_ptr<Surface2D> >& posed2D)
 void App::onCleanup() {
     // Called after the application loop ends.  Place a majority of cleanup code
     // here instead of in the constructor so that exceptions can be caught.
+}
+
+/*
+* Generates automatically the staircase scene.
+*/
+void App::generateStaircaseFile()
+{
+    G3D::TextOutput output = G3D::TextOutput("scene/staircase.Scene.Any");
+    output.printf("// -*- C++ -*-\n" \
+        "/** \\file cornellBox.Scene.Any */\n" \
+        "{\n" \
+        "\tname = \"Staircase\";\n\n" \
+        "\tmodels = {\n" \
+        "\t\tstepModel = ArticulatedModel::Specification {\n" \
+        "\t\t\tfilename = \"model/crate/crate.obj\";\n" \
+        "\t\t\tpreprocess = {\n" \
+        "\t\t\t\tsetMaterial(\n" \
+        "\t\t\t\t\tall(),\n" \
+        "\t\t\t\t\tUniversalMaterial::Specification {\n" \
+        "\t\t\t\t\t\tlambertian = \"texture/wood.png\";\n" \
+        "\t\t\t\t\t};\n" \
+        "\t\t\t\t);\n" \
+        "\t\t\ttransformGeometry(all(), Matrix4::scale(1.0, 0.25, 5.0));\n" \
+        "\t\t\t};\n" \
+        "\t\t};\n" \
+        "\t};\n" \
+        "\tentities = {\n" \
+        "\t\tskybox = Skybox{\n" \
+        "\t\t\ttexture = \"cubemap/whiteroom/whiteroom-*.png\";\n" \
+        "\t\t};\n\n" \
+        "\t\tsun = Light{\n" \
+        "\t\t\tattenuation = (0, 0, 1);\n" \
+        "\t\t\tbulbPower = 4;\n" \
+        "\t\t\tframe = CFrame::fromXYZYPRDegrees(0, 1.6, 0, 0, -90, 0);\n" \
+        "\t\t\tshadowMapSize = Vector2int16(2048, 2048);\n" \
+        "\t\t\tspotHalfAngleDegrees = 45;\n" \
+        "\t\t\trectangular = true;\n" \
+        "\t\t\ttype = \"SPOT\";\n" \
+        "\t\t};\n\n" \
+    );
+
+    //Create 50 steps
+    for (int i(0); i < 50; ++i)
+    {
+        output.printf("\t\tstep_%i = VisibleEntity {\n" \
+            "\t\t\tmodel = \"stepModel\";\n" \
+            "\t\t\tframe = CFrame::fromXYZYPRDegrees(0, %.2f, 0, %i, 0, 0);\n" \
+            "\t\t};\n\n", 
+            i,i*0.25, i*17
+        );
+    }
+
+    //Add camera
+    output.printf("\t\tcamera = Camera{\n" \
+        "\t\t\tframe = CFrame::fromXYZYPRDegrees(0, 6, 15);\n" \
+        "\t\t};\t};\n};"
+    );
+    output.commit();
 }
