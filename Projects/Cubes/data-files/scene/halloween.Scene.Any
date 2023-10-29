@@ -1,0 +1,49 @@
+// -*- C++ -*-
+/** \file halloween.Scene.Any */
+
+/**
+* Setup of a halloween scene from the strange world of Jack.
+*/
+{
+    name = "Halloween";
+
+    models = {
+        pumpkinModel = ArticulatedModel::Specification {
+            filename = "model/cube/cube.obj";
+            preprocess = {
+                setMaterial(
+                    all(), 
+                    UniversalMaterial::Specification {
+                        lambertian = "texture/pumpkin.png";
+                    };
+                );
+            };
+        };
+    };
+
+    entities = {
+        skybox = Skybox {
+            texture = "cubemap/moon/moon_*.png";
+        };
+
+        sun = Light {
+            attenuation = (0, 0, 1);
+            bulbPower = Power3(1e+6);
+            shadowsEnabled = true;
+            shadowMapBias = 0.01;
+            track = lookAt(Point3(-15, 200, 40), Point3(0, 0, 0));
+            shadowMapSize = Vector2int16(2048, 2048);
+            spotHalfAngleDegrees = 4;
+            rectangular = true;
+            type = "SPOT";
+        };
+
+        pumpkin_0 = VisibleEntity {
+            model = "pumpkinModel";
+            frame = CFrame::fromXYZYPRDegrees(0, -5, 0, 0, 0, 0);
+        };
+        camera = Camera{
+            frame = CFrame::fromXYZYPRDegrees(0, 0, 5, 0, -30, 0);
+        };
+    };
+};

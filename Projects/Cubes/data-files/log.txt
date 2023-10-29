@@ -1,13 +1,13 @@
 Application Log
-Start: Sat Oct 28 16:18:46 2023
+Start: Sat Oct 28 19:40:20 2023
 
 WARNING: AudioDevice is not enabled. Set G3DSpecification::audio = true before invoking initGLG3D() to enable audio.
-Initializing System::findDataFile took 0.001358s
+Initializing System::findDataFile took 0.001409s
 
 Entering GApp::GApp()
 cwd = C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files
 System::setAppDataDir("C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files")
-System::setAppDataDirs()Initializing System::findDataFile took 0.000917s
+System::setAppDataDirs()Initializing System::findDataFile took 0.001163s
 Setting video mode
 wglSwapIntervalEXT(0);
 Setting initial rendering state.
@@ -615,6 +615,7 @@ Done GApp::GApp()
 
 Found scenes:
   "Cornell Box" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/cornellBox.Scene.Any)
+  "Halloween" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/halloween.Scene.Any)
   "Staircase" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/staircase.Scene.Any)
   "White Cube" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/whiteCube.Scene.Any)
   "Test Scene" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/test.Scene.Any)
@@ -689,6 +690,7 @@ Found scenes:
   "G3D VR Gallery" (C:\g3d\data10\research/scene/G3D_VR_Gallery.Scene.Any)
 Found scenes:
   "Cornell Box" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/cornellBox.Scene.Any)
+  "Halloween" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/halloween.Scene.Any)
   "Staircase" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/staircase.Scene.Any)
   "White Cube" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/scene/whiteCube.Scene.Any)
   "Test Scene" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files/test.Scene.Any)
@@ -805,14 +807,22 @@ postproc-55.dll
 swresample-3.dll
 swscale-5.dll
 fmod.dll
-C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/2023-10-28__001.jpg
-C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/2023-10-28__001_Final_staircase_image.jpg
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/2023-10-28__002.jpg
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/2023-10-28__002_Halloween_.jpg
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/journal.md.html
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/journal.md.html
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/cubemap/moon/moon_bk.png
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/cubemap/moon/moon_dn.png
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/cubemap/moon/moon_ft.png
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/cubemap/moon/moon_lf.png
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/cubemap/moon/moon_rt.png
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/cubemap/moon/moon_up.png
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/icon.png
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/log.txt
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/scene/halloween.Scene.Any
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/scene/staircase.Scene.Any
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/scene/staircase.Scene.Any
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/texture/pumpkin.png
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/texture/wood.png
 C:/g3d/G3D10/data-files/font/arial.fnt
 C:/g3d/G3D10/data-files/font/console-small.fnt
@@ -884,6 +894,9 @@ C:/g3d/data10/common/cubemap/whiteroom/whiteroom-NZ.png
 C:/g3d/data10/common/cubemap/whiteroom/whiteroom-PX.png
 C:/g3d/data10/common/cubemap/whiteroom/whiteroom-PY.png
 C:/g3d/data10/common/cubemap/whiteroom/whiteroom-PZ.png
+C:/g3d/data10/common/model/cube/cube.obj
+C:/g3d/data10/common/model/cube/default.mtl
+C:/g3d/data10/common/model/cube/default.png
 C:/g3d/data10/game/model/crate/crate.mtl
 C:/g3d/data10/game/model/crate/crate.obj
 C:/g3d/data10/game/model/crate/metalcrate-B.png
