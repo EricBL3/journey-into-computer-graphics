@@ -2,22 +2,106 @@
 /** \file halloween.Scene.Any */
 
 /**
-* Setup of a halloween scene from the strange world of Jack.
+* Setup of a dia de muertos scene from the strange world of Jack.
 */
 {
-    name = "Halloween";
+    name = "Dia de muertos";
 
     models = {
-        pumpkinModel = ArticulatedModel::Specification {
+        headModel = ArticulatedModel::Specification {
             filename = "model/cube/cube.obj";
             preprocess = {
-                setMaterial(
-                    all(), 
-                    UniversalMaterial::Specification {
-                        lambertian = "texture/pumpkin.png";
-                    };
-                );
+                setMaterial(all(), Color3(1, 1, 1));
+                transformGeometry(all(), Matrix4::scale(16.0, 16.0, 16.0));
             };
+        };
+
+        mouthBaseModel = ArticulatedModel::Specification{
+                filename = "model/cube/cube.obj";
+                preprocess = {
+                    setMaterial(all(), Color3(1, 1, 1));
+                    transformGeometry(all(), Matrix4::scale(14.0, 8.0, 16.0));
+                };
+        };
+
+        mouthSidesModel = ArticulatedModel::Specification{
+                filename = "model/cube/cube.obj";
+                preprocess = {
+                    setMaterial(all(), Color3(0, 0, 0));
+                    transformGeometry(all(), Matrix4::scale(2.0, 5.0, 17.0));
+                };
+        };
+
+        mouthModel = ArticulatedModel::Specification{
+                filename = "model/cube/cube.obj";
+                preprocess = {
+                    setMaterial(all(), Color3(0, 0, 0));
+                    transformGeometry(all(), Matrix4::scale(8.0, 4.0, 17.0));
+                };
+        };
+
+        teethModel = ArticulatedModel::Specification{
+                filename = "model/cube/cube.obj";
+                preprocess = {
+                    setMaterial(all(), Color3(1, 1, 1));
+                transformGeometry(all(), Matrix4::scale(1.0, 1.5, 17.5));
+                };
+        };
+
+        eyeModel = ArticulatedModel::Specification{
+                filename = "model/cube/cube.obj";
+                preprocess = {
+                    setMaterial(all(), Color3(0, 0, 0));
+                    transformGeometry(all(), Matrix4::scale(4.0, 4.0, 17.0));
+                };
+        };
+
+        noseDetailModel = ArticulatedModel::Specification{
+                filename = "model/cube/cube.obj";
+                preprocess = {
+                    setMaterial(all(), Color3(0.68, 0.85, 0.9));
+                    transformGeometry(all(), Matrix4::scale(1.5, 3.0, 17.5));
+                };
+        };
+
+        noseHoleModel = ArticulatedModel::Specification{
+                filename = "model/cube/cube.obj";
+                preprocess = {
+                    setMaterial(all(), Color3(0, 0, 0));
+                    transformGeometry(all(), Matrix4::scale(2.0, 3.0, 17.0));
+                };
+        };
+
+        crossModel = ArticulatedModel::Specification{
+                filename = "model/cube/cube.obj";
+                preprocess = {
+                    setMaterial(all(), Color3(0.68, 0.85, 0.9));
+                    transformGeometry(all(), Matrix4::scale(1.0, 3.0, 17.0));
+                };
+        };
+
+        eyeDetailModel = ArticulatedModel::Specification{
+                filename = "model/cube/cube.obj";
+                preprocess = {
+                    setMaterial(all(), Color3(1, 0.65, 0));
+                    transformGeometry(all(), Matrix4::scale(0.25, 1, 17.5));
+                };
+        };
+
+        headSmallDetailModel = ArticulatedModel::Specification{
+                filename = "model/cube/cube.obj";
+                preprocess = {
+                    setMaterial(all(), Color3(1, 0.65, 0));
+                    transformGeometry(all(), Matrix4::scale(4, 2, 17.5));
+                };
+        };
+
+        headBigDetailModel = ArticulatedModel::Specification{
+                filename = "model/cube/cube.obj";
+                preprocess = {
+                    setMaterial(all(), Color3(0.68, 0.85, 0.9));
+                    transformGeometry(all(), Matrix4::scale(4, 2, 17.5));
+                };
         };
     };
 
@@ -28,22 +112,109 @@
 
         sun = Light {
             attenuation = (0, 0, 1);
-            bulbPower = Power3(1e+6);
-            shadowsEnabled = true;
-            shadowMapBias = 0.01;
-            track = lookAt(Point3(-15, 200, 40), Point3(0, 0, 0));
+            bulbPower = Power3(2e+006);
+            frame = CFrame::fromXYZYPRDegrees(0, 90, 160, 0, -32, -90);
             shadowMapSize = Vector2int16(2048, 2048);
-            spotHalfAngleDegrees = 4;
+            spotHalfAngleDegrees = 5;
             rectangular = true;
             type = "SPOT";
         };
 
-        pumpkin_0 = VisibleEntity {
-            model = "pumpkinModel";
-            frame = CFrame::fromXYZYPRDegrees(0, -5, 0, 0, 0, 0);
+        // Mouth
+        mouth = VisibleEntity{
+            model = "mouthBaseModel";
+            frame = CFrame::fromXYZYPRDegrees(0.0, -37, -35, 0, 0, 0);
         };
+
+        insideMouth_1 = VisibleEntity{
+            model = "mouthSidesModel";
+            frame = CFrame::fromXYZYPRDegrees(-5, -37, -35, 0, 0, 0);
+        };
+
+        insideMouth_2 = VisibleEntity{
+            model = "mouthModel";
+            frame = CFrame::fromXYZYPRDegrees(0.0, -37.5, -35, 0, 0, 0);
+        };
+
+        insideMouth_3 = VisibleEntity{
+            model = "mouthSidesModel";
+            frame = CFrame::fromXYZYPRDegrees(5, -37, -35, 0, 0, 0);
+        };
+
+        teeth_1 = VisibleEntity{
+            model = "teethModel";
+            frame = CFrame::fromXYZYPRDegrees(-3.5, -36.3, -35, 0, 0, 0);
+        };
+
+        teeth_2 = VisibleEntity{
+            model = "teethModel";
+            frame = CFrame::fromXYZYPRDegrees(-3.5, -38.7, -35, 0, 0, 0);
+        };
+
+        teeth_3 = VisibleEntity{
+            model = "teethModel";
+            frame = CFrame::fromXYZYPRDegrees(-1.2, -36.3, -35, 0, 0, 0);
+        };
+
+        teeth_4 = VisibleEntity{
+            model = "teethModel";
+            frame = CFrame::fromXYZYPRDegrees(-1.2, -38.7, -35, 0, 0, 0);
+        };
+
+        teeth_5 = VisibleEntity{
+            model = "teethModel";
+            frame = CFrame::fromXYZYPRDegrees(1.2, -36.3, -35, 0, 0, 0);
+        };
+
+        teeth_6 = VisibleEntity{
+            model = "teethModel";
+            frame = CFrame::fromXYZYPRDegrees(1.2, -38.7, -35, 0, 0, 0);
+        };
+
+        teeth_7 = VisibleEntity{
+            model = "teethModel";
+            frame = CFrame::fromXYZYPRDegrees(3.5, -36.3, -35, 0, 0, 0);
+        };
+
+        teeth_8 = VisibleEntity{
+            model = "teethModel";
+            frame = CFrame::fromXYZYPRDegrees(3.5, -38.7, -35, 0, 0, 0);
+        };
+
+        // Head
+        head = VisibleEntity{
+            model = "headModel";
+            frame = CFrame::fromXYZYPRDegrees(0, -25, -35, 0, 0, 0);
+        };
+
+        leftEye = VisibleEntity{
+            model = "eyeModel";
+            frame = CFrame::fromXYZYPRDegrees(-4, -23, -35, 0, 0, 0);
+        };
+
+        rightEye = VisibleEntity{
+            model = "eyeModel";
+            frame = CFrame::fromXYZYPRDegrees(4, -23, -35, 0, 0, 0);
+        };
+
+        noseHole = VisibleEntity{
+            model = "noseHoleModel";
+            frame = CFrame::fromXYZYPRDegrees(0, -30, -35, 0, 0, 0);
+        };
+
+        noseDetail_1 = VisibleEntity{
+            model = "noseDetailModel";
+            frame = CFrame::fromXYZYPRDegrees(-1, -30, -35, 0, 0, -15);
+        };
+
+        noseDetail_2 = VisibleEntity{
+            model = "noseDetailModel";
+            frame = CFrame::fromXYZYPRDegrees(1, -30, -35, 0, 0, 15);
+        };
+
+
         camera = Camera{
-            frame = CFrame::fromXYZYPRDegrees(0, 0, 5, 0, -30, 0);
+            frame = CFrame::fromXYZYPRDegrees(0, 0, 10, 0, -30, 0);
         };
     };
 };
