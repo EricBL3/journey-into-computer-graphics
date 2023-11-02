@@ -1,13 +1,13 @@
 Application Log
-Start: Tue Oct 31 19:33:27 2023
+Start: Thu Nov  2 14:45:25 2023
 
 WARNING: AudioDevice is not enabled. Set G3DSpecification::audio = true before invoking initGLG3D() to enable audio.
-Initializing System::findDataFile took 0.002106s
+Initializing System::findDataFile took 0.001338s
 
 Entering GApp::GApp()
 cwd = C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files
 System::setAppDataDir("C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Cubes\data-files")
-System::setAppDataDirs()Initializing System::findDataFile took 0.001078s
+System::setAppDataDirs()Initializing System::findDataFile took 0.000921s
 Setting video mode
 wglSwapIntervalEXT(0);
 Setting initial rendering state.
@@ -789,12 +789,6 @@ Vertex info
 
 
 
-
-
-
-
-
-
 _____________________________________________________
 
     ###    Files Used    ###
@@ -813,8 +807,8 @@ postproc-55.dll
 swresample-3.dll
 swscale-5.dll
 fmod.dll
-C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/2023-10-31__000.jpg
-C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/2023-10-31__000_Dia_de_muertos_skull.jpg
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/2023-11-02__000.jpg
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/2023-11-02__000_Dia_de_muertos_skull.jpg
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/journal.md.html
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/../journal/journal.md.html
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Cubes/data-files/cubemap/moon/moon_bk.png
@@ -849,8 +843,6 @@ C:/g3d/G3D10/data-files/shader/AmbientOcclusion/AmbientOcclusion_reconstructCSZ.
 C:/g3d/G3D10/data-files/shader/BumpMap/BumpMap.glsl
 C:/g3d/G3D10/data-files/shader/Camera/Camera.glsl
 C:/g3d/G3D10/data-files/shader/DDGIVolume/DDGIVolume.glsl
-C:/g3d/G3D10/data-files/shader/DefaultRenderer/DefaultRenderer_OIT_writePixel.glsl
-C:/g3d/G3D10/data-files/shader/DefaultRenderer/DefaultRenderer_compositeWeightedBlendedOIT.pix
 C:/g3d/G3D10/data-files/shader/DefaultRenderer/DefaultRenderer_deferredShade.pix
 C:/g3d/G3D10/data-files/shader/Film/Film_FXAA_13_quality.pix
 C:/g3d/G3D10/data-files/shader/Film/Film_bloomExpose.pix
@@ -870,8 +862,6 @@ C:/g3d/G3D10/data-files/shader/LightingEnvironment/LightingEnvironment_LightUnif
 C:/g3d/G3D10/data-files/shader/LightingEnvironment/LightingEnvironment_environmentMapUniforms.glsl
 C:/g3d/G3D10/data-files/shader/SkyboxSurface/SkyboxSurface_gbuffer.pix
 C:/g3d/G3D10/data-files/shader/SkyboxSurface/SkyboxSurface_gbuffer.vrt
-C:/g3d/G3D10/data-files/shader/SlowMesh/SlowMesh_render.pix
-C:/g3d/G3D10/data-files/shader/SlowMesh/SlowMesh_render.vrt
 C:/g3d/G3D10/data-files/shader/TemporalFilter/TemporalFilter_apply.pix
 C:/g3d/G3D10/data-files/shader/Texture/Texture.glsl
 C:/g3d/G3D10/data-files/shader/Texture/Texture_copy.pix
