@@ -1,0 +1,95 @@
+<meta charset="utf-8">
+
+**Cubes Report**
+
+# System Overview
+
+The project is based on the starter template of G3D. The main class for this project is called App and it contains
+all the methods for initializing and loading the 3D scenes. The only modification that I did was to add the generateStaircaseFile() 
+method. This method is used for generating automatically the staircase scene.
+
+# Coordinate System
+
+G3D uses a left-hand coordinate system.
+
+![G3D Coordinate System](coordinate_system.png)
+
+# Results
+
+## White Cube Scene
+![White Cube Scene](white_cube_scene.jpg)
+## Cornell Box Scene
+
+![Cornell Box Model](cornell_box.jpg)
+
+## Staircase Scene
+
+![Staircase generated with helper function](staircase.jpg)
+
+## Interesting Scene
+
+![Dia de muertos inspired scene](dia_de_muertos.jpg)
+
+# Process for custom scene
+
+When creating my custom scene I initally had the idea of doing something Halloween themed because of the date. 
+I looked for online resources and generated a cubemap that looks like there's a big moon. The idea was to create 
+a scene inspired by the movie "The Nightmare Before Christmas". However, representing the scene with just cubes would 
+involve a very large amount of time and I didn't want to spend any more time than necessary considering that this project 
+just aims to teach me the basics of the 3D engine and how other projects will be structured.
+
+In the end, I decided to base it on the design of a Dia de Muertos skull that I found online. I manually added the 
+specifications for each model and for each entity. To do this more efficiently I also used the scene editing GUI.
+
+# LaTeX equation
+
+\begin{equation}
+    \frac{df(x)}{dx} = \lim_{h\to0} \begin{bmatrix}
+                                    \frac{f(x + h) - f(x - h)}{2h}
+                            \end{bmatrix}
+\end{equation}
+
+# Questions
+
+1. What are the differences between the Scene* and shared_ptr<scene> data types in C++?
+    
+    Scene* is a normal pointer, which means that you have to manually manage its memory during its lifetime.
+    Meanwhile, a shared_ptr is a pointer that uses reference counting to automatically manage the lifetime of the object. This makes it easier and safer to use.
+
+2. How does G3D know where the scene files are located?
+
+   The current directory is specified in the settings of the G3D GApp object. Then, whenever a new scene has to be loaded 
+    using loadScene() you just have to pass the name of the scene.
+
+3. Why should you to put your initialization code into App::onInit instead of constructor App::App? (Tip: There are many reasons. Try throwing an exception from each, and consider the implications of throwing an exception from a class's constructor.)
+
+    The initialization code should be put in the onInit function because when this function runs, the object already 
+    exists on memory. This means that you are able to throw and catch exceptions.
+
+4. What is the call chain that invokes App::onGraphics3D?
+
+    GApp::run -> GApp::onInit -> GApp::onWait -> GApp::onGraphics -> GApp::onGraphics3D
+
+5. Where is the file cube.obj stored on the file system? How did the Scene parser know to load it from there?
+
+    It's located in 'g3d\data10\common\model\cube\cube.obj'. The scene parser knows to load it from there becase it 
+    has the common directory in the path of the scenes. This means that you just need to specify the path from there.
+
+6. You can create a material in a scene file from a Color3. There are many more ways to construct a G3D material, however. One of these takes separate lambertian, glossy, emissive, and transmissive values. Speculate on why a homogeneous material (i.e., one without a pattern or image) would require four separate 'colors' in its specification.
+
+    The material requires 4 separate colors because each one will affect a different property of the material.
+
+# Reflection
+
+This first project allowed me to get some hands-on practice and start familiarizing myself with the G3D engine.
+Besides, I also started familiarizing myself with the requirements for the projects and how to handle the journal and the report.
+
+# Time
+
+It took me a total of 11.52 hours to complete this project.
+
+3.25 hours were spent in the warmup section and installing and setting up G3D
+
+The remaining 8.27 hours were spent doing the specifications and report of the project.
+
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>

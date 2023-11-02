@@ -1,7 +1,9 @@
 <map id="App.cpp" name="App.cpp">
-<area shape="rect" id="Node000001" title=" " alt="" coords="15,5,84,32"/>
-<area shape="rect" id="Node000002" href="$_app_8h.html" title="The G3D 10.00 default starter app is configured for OpenGL 4.1 and relatively recent GPUs." alt="" coords="22,80,77,107"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="52,33,52,64,47,64,47,33"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="63,5,132,32"/>
+<area shape="rect" id="Node000002" href="$_app_8h.html" title="The G3D 10.00 default starter app is configured for OpenGL 4.1 and relatively recent GPUs." alt="" coords="70,80,125,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,33,100,64,95,64,95,33"/>
 <area shape="rect" id="Node000003" title=" " alt="" coords="5,155,94,181"/>
-<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="52,107,52,139,47,139,47,107"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="91,109,68,143,64,140,87,106"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="118,155,176,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="108,106,132,140,128,143,104,109"/>
 </map>
