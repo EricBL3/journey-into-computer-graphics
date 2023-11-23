@@ -1,0 +1,53 @@
+
+/**
+* Setup of the cube scene.
+*/
+{
+    name = "Cube model";
+
+    models = {
+        groundModel = ArticulatedModel::Specification {
+            filename = "square.ifs";
+            scale = 20;
+        };
+
+
+        cubeModel = ArticulatedModel::Specification {
+            filename = "model/cube.off";
+            preprocess = {
+                setMaterial(all(), Color3(1, 1, 1));
+            };
+        };
+    };
+
+    entities = {
+        skybox = Skybox {
+            texture = "cubemap/noonclouds/noonclouds_*.png";
+        };
+
+        sun = Light{
+            bulbPower = Power3(2e6,1.7e6,1.4e6);
+            shadowMapBias = 0.01;
+            track = lookAt(Point3(-90, 200, 40), Point3(0, 0, 0));
+            shadowMapSize = Vector2int16(4096, 4096);
+            shadowMapBias = 0.02;
+            spotHalfAngleDegrees = 7;
+            rectangular = true;
+            type = "SPOT";
+        };
+
+        ground = VisibleEntity{
+            model = "groundModel";
+            frame = CFrame::fromXYZYPRDegrees(0,0,0,0,-90,0);
+        };
+
+        cube = VisibleEntity {
+            model = "cubeModel";
+            frame = CFrame::fromXYZYPRDegrees(0, 0, 0, 0, 0, 0);
+        };
+
+        camera = Camera{
+            frame = CFrame::fromXYZYPRDegrees(3.3f,   1.9f,   3.7f,  41.0f,  -15.5f,   0.0f);
+        };
+    };
+};

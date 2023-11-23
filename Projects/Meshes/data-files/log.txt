@@ -1,13 +1,13 @@
 Application Log
-Start: Thu Nov 23 08:41:06 2023
+Start: Thu Nov 23 09:54:53 2023
 
 WARNING: AudioDevice is not enabled. Set G3DSpecification::audio = true before invoking initGLG3D() to enable audio.
-Initializing System::findDataFile took 0.001387s
+Initializing System::findDataFile took 0.000783s
 
 Entering GApp::GApp()
 cwd = C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Meshes\data-files
 System::setAppDataDir("C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Meshes\data-files")
-System::setAppDataDirs()Initializing System::findDataFile took 0.000970s
+System::setAppDataDirs()Initializing System::findDataFile took 0.000126s
 Setting video mode
 wglSwapIntervalEXT(0);
 Setting initial rendering state.
@@ -131,7 +131,7 @@ GPU Supports OpenGL 4.1 or later    yes - OpenGL version on this driver is 4.42
 Done initializing RenderDevice.
 Network StartupSystem = { 
     App { 
-        Name = "C:\\Users\\Eric\\Documents\\PARA\\Projects\\journey-into-computer-graphics\\Projects\\Meshes\\x64\\Debug\\Meshesd.exe"
+        Name = "C:\\Users\\Eric\\Documents\\PARA\\Projects\\journey-into-computer-graphics\\Projects\\Meshes\\x64\\Release\\Meshes.exe"
         cwd = "C:\\Users\\Eric\\Documents\\PARA\\Projects\\journey-into-computer-graphics\\Projects\\Meshes\\data-files"
     } 
     
@@ -146,7 +146,7 @@ Network StartupSystem = {
     
     G3D { 
         Link version = 100100 
-        Compile version = "G3D Innovation Engine 10.01 (Debug)"
+        Compile version = "G3D Innovation Engine 10.01"
         G3DSpecification::deployMode = No 
         G3D10DATA = "C:\\g3d\\G3D10\\data-files;C:\\g3d\\data10\\common;C:\\g3d\\data10\\game;C:\\g3d\\data10\\research"
     } 
@@ -614,6 +614,7 @@ Done GApp::loadFont(...)
 Done GApp::GApp()
 
 Found scenes:
+  "Cube model" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Meshes\data-files/scene/cube.Scene.Any)
   "Test Scene" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Meshes\data-files/test.Scene.Any)
   "G3D Debug Animation (Skeletal)" (C:\g3d\data10\common/scene/G3D_Debug_Animation_(Skeletal).Scene.Any)
   "G3D Debug Area Light (Glossy)" (C:\g3d\data10\common/scene/G3D_Debug_Area_Light_(Glossy).Scene.Any)
@@ -685,6 +686,7 @@ Found scenes:
   "G3D VR Bedroom" (C:\g3d\data10\research/scene/G3D_VR_Bedroom.Scene.Any)
   "G3D VR Gallery" (C:\g3d\data10\research/scene/G3D_VR_Gallery.Scene.Any)
 Found scenes:
+  "Cube model" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Meshes\data-files/scene/cube.Scene.Any)
   "Test Scene" (C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Meshes\data-files/test.Scene.Any)
   "G3D Debug Animation (Skeletal)" (C:\g3d\data10\common/scene/G3D_Debug_Animation_(Skeletal).Scene.Any)
   "G3D Debug Area Light (Glossy)" (C:\g3d\data10\common/scene/G3D_Debug_Area_Light_(Glossy).Scene.Any)
@@ -760,9 +762,19 @@ Found scenes:
 
 
 
+
+
 Vertex info
 -----------
 1(39) : warning C7050: "tex0" might be used before being initialized
+1(39) : warning C7050: "tex1" might be used before being initialized
+
+Vertex info
+-----------
+1(39) : warning C7050: "tex1" might be used before being initialized
+
+Vertex info
+-----------
 1(39) : warning C7050: "tex1" might be used before being initialized
 
 
@@ -771,9 +783,28 @@ Vertex info
 
 
 
+Fragment info
+-------------
+1(58) : warning C7050: "focusPlaneZ" might be used before being initialized
+1(59) : warning C7050: "scale" might be used before being initialized
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+Vertex info
+-----------
+1(39) : warning C7050: "tex0" might be used before being initialized
+1(39) : warning C7050: "tex1" might be used before being initialized
 
 
 
@@ -802,6 +833,8 @@ swscale-5.dll
 fmod.dll
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/icon.png
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/log.txt
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/model/cube.off
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/scene/cube.Scene.Any
 C:/g3d/G3D10/data-files/font/arial.fnt
 C:/g3d/G3D10/data-files/font/console-small.fnt
 C:/g3d/G3D10/data-files/font/greek.fnt
@@ -823,6 +856,10 @@ C:/g3d/G3D10/data-files/shader/BumpMap/BumpMap.glsl
 C:/g3d/G3D10/data-files/shader/Camera/Camera.glsl
 C:/g3d/G3D10/data-files/shader/DDGIVolume/DDGIVolume.glsl
 C:/g3d/G3D10/data-files/shader/DefaultRenderer/DefaultRenderer_deferredShade.pix
+C:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField.glsl
+C:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField_blur.pix
+C:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField_circleOfConfusion.pix
+C:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField_composite.pix
 C:/g3d/G3D10/data-files/shader/Film/Film_FXAA_13_quality.pix
 C:/g3d/G3D10/data-files/shader/Film/Film_bloomExpose.pix
 C:/g3d/G3D10/data-files/shader/Film/Film_composite.pix
@@ -847,6 +884,7 @@ C:/g3d/G3D10/data-files/shader/UniversalMaterial/UniversalMaterial.glsl
 C:/g3d/G3D10/data-files/shader/UniversalMaterial/UniversalMaterial_sample.glsl
 C:/g3d/G3D10/data-files/shader/UniversalMaterial/UniversalMaterial_writeToGBuffer.glsl
 C:/g3d/G3D10/data-files/shader/UniversalSurface/UniversalSurface_depthOnly.vrt
+C:/g3d/G3D10/data-files/shader/UniversalSurface/UniversalSurface_depthOnlyNonOpaque.pix
 C:/g3d/G3D10/data-files/shader/UniversalSurface/UniversalSurface_fragmentInputs.glsl
 C:/g3d/G3D10/data-files/shader/UniversalSurface/UniversalSurface_gbuffer.pix
 C:/g3d/G3D10/data-files/shader/UniversalSurface/UniversalSurface_gbuffer.vrt
@@ -865,14 +903,61 @@ C:/g3d/G3D10/data-files/shader/reverseReprojection.glsl
 C:/g3d/G3D10/data-files/shader/textureFilter.glsl
 C:/g3d/G3D10/data-files/shader/unlit.pix
 C:/g3d/G3D10/data-files/shader/unlit.vrt
-C:/g3d/data10/common/cubemap/cornellbox/empty-RG-NX.png
-C:/g3d/data10/common/cubemap/cornellbox/empty-RG-NY.png
-C:/g3d/data10/common/cubemap/cornellbox/empty-RG-NZ.png
-C:/g3d/data10/common/cubemap/cornellbox/empty-RG-PX.png
-C:/g3d/data10/common/cubemap/cornellbox/empty-RG-PY.png
-C:/g3d/data10/common/cubemap/cornellbox/empty-RG-PZ.png
-C:/g3d/data10/common/model/CornellBox/CornellBox.zip
-C:/g3d/data10/common/model/CornellBox/CornellBox.zip/CornellBox-Original.mtl
-C:/g3d/data10/common/model/CornellBox/CornellBox.zip/CornellBox-Original.obj
-C:/g3d/data10/common/scene/G3D_Simple_Cornell_Box_(Area_Light).Scene.Any
+C:/g3d/data10/common/cubemap/noonclouds/noonclouds_bk.png
+C:/g3d/data10/common/cubemap/noonclouds/noonclouds_dn.png
+C:/g3d/data10/common/cubemap/noonclouds/noonclouds_ft.png
+C:/g3d/data10/common/cubemap/noonclouds/noonclouds_lf.png
+C:/g3d/data10/common/cubemap/noonclouds/noonclouds_rt.png
+C:/g3d/data10/common/cubemap/noonclouds/noonclouds_up.png
+C:/g3d/data10/common/cubemap/uffizi/uffizi+x.jpg
+C:/g3d/data10/common/cubemap/uffizi/uffizi+y.jpg
+C:/g3d/data10/common/cubemap/uffizi/uffizi+z.jpg
+C:/g3d/data10/common/cubemap/uffizi/uffizi-x.jpg
+C:/g3d/data10/common/cubemap/uffizi/uffizi-y.jpg
+C:/g3d/data10/common/cubemap/uffizi/uffizi-z.jpg
+C:/g3d/data10/common/ifs/square.ifs
+C:/g3d/data10/common/model/crytek_sponza/sponza.ArticulatedModel.Any
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/sponza.mtl
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/sponza.obj
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/background.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/background_bump.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/chain_texture.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/chain_texture_bump.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/chain_texture_mask.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/floor_gloss.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/lion.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/lion_bump.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/spnza_bricks_a_bump.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/spnza_bricks_a_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/spnza_bricks_a_spec.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_arch_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_ceiling_a_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_column_a_bump.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_column_a_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_column_b_bump.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_column_b_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_column_c_bump.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_column_c_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_curtain_blue_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_curtain_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_curtain_green_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_details_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_fabric_blue_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_fabric_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_fabric_green_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_flagpole_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_floor_a_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_roof_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_thorn_bump.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_thorn_diff.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/sponza_thorn_mask.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_bump.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_dif.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_hanging.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_plant.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_plant_mask.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_round.png
+C:/g3d/data10/common/model/crytek_sponza/sponza.zip/textures/vase_round_bump.png
+C:/g3d/data10/common/scene/G3D_Sponza.Scene.Any
 
