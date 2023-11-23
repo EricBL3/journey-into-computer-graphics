@@ -1,0 +1,87 @@
+<meta charset="utf-8">
+
+**Meshes Report**
+
+# Main algorithms
+
+Describe main algorithms of program with pseudocode or diagrams
+
+## makeCube()
+
+## makeCylinder()
+
+## generateHeightField()
+
+## generateDrinkingGlass()
+
+# Implementation design
+
+Summarize your implementation design in no more than two paragraphs. Provide sufficient information to 
+aid future implementors seeking to reproduce your work. Why did you make the program this way? What were your 
+main iteration structures? What were the key G3D routines that you used?
+
+# Results
+
+## Cube
+
+## Cylinder
+
+## Heightfield
+
+## Drinking Glass
+
+# Demo Scene
+
+Images without wireframe
+
+Description:
+
+# Questions
+
+1. G3D uses some real-time rendering tricks to fake reflections of the sky, but if you fly along the shore of my island, you'll see that the water doesn't actually reflect the mountains. How could you simulate the image of the missing reflection in a plane of water or a mirror using only nonreflective 3D models?
+
+2. The underlying renderer converts all models into triangles, which you can see in the wireframe renderings. Why are triangle meshes the preferred primitive compared to, say, quadrilaterals, which would be more space efficient and are often easier for modeling?
+
+3. The regular tessellation we used for heightfields is inefficient. It will allocate the same number of triangles for flat portions of the heightfield that need few triangles as for very hilly ones that need many to accurately represent the shape. Propose an alternative algorithm for computing a more efficient triangular tessellation for a given heightfield. Do not actually implement your algorithm. You may invent one on your own or use external resources to discover existing algorithms.
+
+# Reflection
+
+Describe what you learned while working on this project. Distinguish software engineering, algorithmic, 
+and mathematical skills. Include the reading and ideas that you had to implicitly work through even if not required.
+
+
+# Workflow
+
+## Tasks planning
+
+| Task | Description | Planned time (h) | Actual time (h) |
+|------|-------------|------------------|-----------------|
+| Report Draft | Format markdeep document with placeholder text for each section | 0.5 | 0.5 |
+| makeCube() draft | Text editor cube file, understand API for generating files and method algorithm. | 1 |  |
+| makeCylinder() draft | Method skeleton and algorithm | 1 |  |
+| makeCylinder() GUI draft | Create GUI that displays message on click | 1 |  |
+| generateHeightfield() draft | Create GUI and connect to skeleton method. Make algorithm for method | 1 |  |
+| generateDrinkingGlass() draft | Create GUI and connect to skeleton method. Make algorithm for method | 1 |  |
+| Demo Scene draft | Create scene with placeholder objects | 0.5 |  |
+| Report MVP | Answer questions with placeholder images for result. Create scenes for each shape and specification | 1 |  |
+| makeCube() MVP | Function that generates cube with edge length as parameter | 0.5 |  |
+| makeCylinder() MVP | Implement algorithm with possible buggy faces | 1 |  |
+| makeCylinder() GUI MVP | Connect method with GUI | 0.5 |  |
+| generateHeightfield() MVP | Implement algorithm with possible bugs | 1.5 |  |
+| generateDrinkingGlass() MVP | Implement algorithm with possible bugs | 1.5 |  |
+| Demo Scene MVP | Generate GUI and methods for remaining objects. Replace placeholder objects with final objects | 1.5 |  |
+| Report Polish | Add final screenshots and final answers (workflow). Check report format. | 0.5 |  |
+| makeCube() Polish | Add GUI for generating cube mesh | 0.5 |  |
+| makeCylinder() Polish | Fix method bugs | 0.5 |  |
+| makeCylinder() GUI Polish | Flush cache and reload current scene | 0.5 |  |
+| generateHeightfield() Polish | Fix all bugs | 0.5 |  |
+| generateDrinkingGlass() Polish | Fix all bugs | 0.5 |  |
+| Demo Scene Polish | Add materials and lighting | 1 |  |
+
+## Total time
+
+**MVP**:
+
+**Polish**:
+
+<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style><script src="markdeep.min.js" charset="utf-8"></script><script src="https://morgan3d.github.io/markdeep/latest/markdeep.min.js" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>

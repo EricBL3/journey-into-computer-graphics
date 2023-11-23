@@ -1,13 +1,13 @@
 Application Log
-Start: Thu Nov 23 08:04:34 2023
+Start: Thu Nov 23 08:41:06 2023
 
 WARNING: AudioDevice is not enabled. Set G3DSpecification::audio = true before invoking initGLG3D() to enable audio.
-Initializing System::findDataFile took 0.002388s
+Initializing System::findDataFile took 0.001387s
 
 Entering GApp::GApp()
 cwd = C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Meshes\data-files
 System::setAppDataDir("C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Meshes\data-files")
-System::setAppDataDirs()Initializing System::findDataFile took 0.000535s
+System::setAppDataDirs()Initializing System::findDataFile took 0.000970s
 Setting video mode
 wglSwapIntervalEXT(0);
 Setting initial rendering state.
@@ -782,17 +782,6 @@ Vertex info
 
 
 
-
-Vertex info
------------
-1(39) : warning C7050: "tex0" might be used before being initialized
-1(39) : warning C7050: "tex1" might be used before being initialized
-
-
-
-
-
-
 _____________________________________________________
 
     ###    Files Used    ###
@@ -811,10 +800,8 @@ postproc-55.dll
 swresample-3.dll
 swscale-5.dll
 fmod.dll
-C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/g3d-license.txt
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/icon.png
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/log.txt
-C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/test.Scene.Any
 C:/g3d/G3D10/data-files/font/arial.fnt
 C:/g3d/G3D10/data-files/font/console-small.fnt
 C:/g3d/G3D10/data-files/font/greek.fnt
@@ -884,23 +871,8 @@ C:/g3d/data10/common/cubemap/cornellbox/empty-RG-NZ.png
 C:/g3d/data10/common/cubemap/cornellbox/empty-RG-PX.png
 C:/g3d/data10/common/cubemap/cornellbox/empty-RG-PY.png
 C:/g3d/data10/common/cubemap/cornellbox/empty-RG-PZ.png
-C:/g3d/data10/common/cubemap/noonclouds/noonclouds_bk.png
-C:/g3d/data10/common/cubemap/noonclouds/noonclouds_dn.png
-C:/g3d/data10/common/cubemap/noonclouds/noonclouds_ft.png
-C:/g3d/data10/common/cubemap/noonclouds/noonclouds_lf.png
-C:/g3d/data10/common/cubemap/noonclouds/noonclouds_rt.png
-C:/g3d/data10/common/cubemap/noonclouds/noonclouds_up.png
-C:/g3d/data10/common/cubemap/uffizi/uffizi+x.jpg
-C:/g3d/data10/common/cubemap/uffizi/uffizi+y.jpg
-C:/g3d/data10/common/cubemap/uffizi/uffizi+z.jpg
-C:/g3d/data10/common/cubemap/uffizi/uffizi-x.jpg
-C:/g3d/data10/common/cubemap/uffizi/uffizi-y.jpg
-C:/g3d/data10/common/cubemap/uffizi/uffizi-z.jpg
-C:/g3d/data10/common/ifs/square.ifs
 C:/g3d/data10/common/model/CornellBox/CornellBox.zip
 C:/g3d/data10/common/model/CornellBox/CornellBox.zip/CornellBox-Original.mtl
 C:/g3d/data10/common/model/CornellBox/CornellBox.zip/CornellBox-Original.obj
 C:/g3d/data10/common/scene/G3D_Simple_Cornell_Box_(Area_Light).Scene.Any
-C:/g3d/data10/game/model/eracoon-lowpoly-vehicle/car-groupc-2.obj
-C:/g3d/data10/game/model/eracoon-lowpoly-vehicle/car.mtl
 
