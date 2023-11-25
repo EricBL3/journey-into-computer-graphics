@@ -180,10 +180,22 @@ void App::makeGUI() {
     // More examples of debugging GUI controls:
     // debugPane->addCheckBox("Use explicit checking", &explicitCheck);
     // debugPane->addTextBox("Name", &myName);
-    // debugPane->addNumberBox("height", &height, "m", GuiTheme::LINEAR_SLIDER, 1.0f, 2.5f);
+    //debugPane->addNumberBox("height", &height, "m", GuiTheme::LINEAR_SLIDER, 1.0f, 2.5f);
     // button = debugPane->addButton("Run Simulator");
     // debugPane->addButton("Generate Heightfield", [this](){ generateHeightfield(); });
     // debugPane->addButton("Generate Heightfield", [this](){ makeHeightfield(imageName, scale, "model/heightfield.off"); });
+
+    //makeCube GUI controls
+    GuiPane* makeCubePane = debugPane->addPane("Cube");
+
+    makeCubePane->addNumberBox("Cube Size", &m_cubeSize, "m", GuiTheme::LOG_SLIDER, 1.0f, 10.0f, 1.0f);
+
+    makeCubePane->addButton("Generate", [this]() {
+        msgBox("Generating the cube");
+    });
+
+    makeCubePane->moveRightOf(giPane);
+    makeCubePane->moveBy(275, 25);
 
     debugWindow->pack();
     debugWindow->setRect(Rect2D::xywh(0, 0, (float)window()->width(), debugWindow->rect().height()));

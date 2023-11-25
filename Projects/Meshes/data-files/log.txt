@@ -1,13 +1,13 @@
 Application Log
-Start: Thu Nov 23 09:54:53 2023
+Start: Sat Nov 25 17:55:13 2023
 
 WARNING: AudioDevice is not enabled. Set G3DSpecification::audio = true before invoking initGLG3D() to enable audio.
-Initializing System::findDataFile took 0.000783s
+Initializing System::findDataFile took 0.000795s
 
 Entering GApp::GApp()
 cwd = C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Meshes\data-files
 System::setAppDataDir("C:\Users\Eric\Documents\PARA\Projects\journey-into-computer-graphics\Projects\Meshes\data-files")
-System::setAppDataDirs()Initializing System::findDataFile took 0.000126s
+System::setAppDataDirs()Initializing System::findDataFile took 0.000110s
 Setting video mode
 wglSwapIntervalEXT(0);
 Setting initial rendering state.
@@ -801,18 +801,6 @@ Fragment info
 
 
 
-Vertex info
------------
-1(39) : warning C7050: "tex0" might be used before being initialized
-1(39) : warning C7050: "tex1" might be used before being initialized
-
-
-
-
-
-
-
-
 _____________________________________________________
 
     ###    Files Used    ###
@@ -831,10 +819,12 @@ postproc-55.dll
 swresample-3.dll
 swscale-5.dll
 fmod.dll
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/../journal/2023-11-25__000.jpg
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/../journal/2023-11-25__000_makeCube_GUI.jpg
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/../journal/journal.md.html
+C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/../journal/journal.md.html
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/icon.png
 C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/log.txt
-C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/model/cube.off
-C:/Users/Eric/Documents/PARA/Projects/journey-into-computer-graphics/Projects/Meshes/data-files/scene/cube.Scene.Any
 C:/g3d/G3D10/data-files/font/arial.fnt
 C:/g3d/G3D10/data-files/font/console-small.fnt
 C:/g3d/G3D10/data-files/font/greek.fnt
@@ -844,12 +834,9 @@ C:/g3d/G3D10/data-files/icon/tango.icn
 C:/g3d/G3D10/data-files/shader/AlphaFilter.glsl
 C:/g3d/G3D10/data-files/shader/AmbientOcclusion/AmbientOcclusion_AO.pix
 C:/g3d/G3D10/data-files/shader/AmbientOcclusion/AmbientOcclusion_AO.vrt
-C:/g3d/G3D10/data-files/shader/AmbientOcclusion/AmbientOcclusion_blur.pix
-C:/g3d/G3D10/data-files/shader/AmbientOcclusion/AmbientOcclusion_blur.vrt
 C:/g3d/G3D10/data-files/shader/AmbientOcclusion/AmbientOcclusion_constants.glsl
 C:/g3d/G3D10/data-files/shader/AmbientOcclusion/AmbientOcclusion_minify.pix
 C:/g3d/G3D10/data-files/shader/AmbientOcclusion/AmbientOcclusion_minify.vrt
-C:/g3d/G3D10/data-files/shader/AmbientOcclusion/AmbientOcclusion_packBilateralKey.glsl
 C:/g3d/G3D10/data-files/shader/AmbientOcclusion/AmbientOcclusion_reconstructCSZ.pix
 C:/g3d/G3D10/data-files/shader/AmbientOcclusion/AmbientOcclusion_reconstructCSZ.vrt
 C:/g3d/G3D10/data-files/shader/BumpMap/BumpMap.glsl
@@ -860,7 +847,6 @@ C:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField.glsl
 C:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField_blur.pix
 C:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField_circleOfConfusion.pix
 C:/g3d/G3D10/data-files/shader/DepthOfField/DepthOfField_composite.pix
-C:/g3d/G3D10/data-files/shader/Film/Film_FXAA_13_quality.pix
 C:/g3d/G3D10/data-files/shader/Film/Film_bloomExpose.pix
 C:/g3d/G3D10/data-files/shader/Film/Film_composite.pix
 C:/g3d/G3D10/data-files/shader/Film/Film_effectsDisabledBlit.pix
@@ -870,6 +856,8 @@ C:/g3d/G3D10/data-files/shader/GBuffer/GBuffer.glsl
 C:/g3d/G3D10/data-files/shader/GFont/GFont_render.pix
 C:/g3d/G3D10/data-files/shader/GFont/GFont_render.vrt
 C:/g3d/G3D10/data-files/shader/GaussianBlur/GaussianBlur_apply.pix
+C:/g3d/G3D10/data-files/shader/GuiTextureBox/GuiTextureBox_2D.pix
+C:/g3d/G3D10/data-files/shader/GuiTextureBox/GuiTextureBox_Arrows.glsl
 C:/g3d/G3D10/data-files/shader/GuiTheme/GuiTheme_render.pix
 C:/g3d/G3D10/data-files/shader/GuiTheme/GuiTheme_render.vrt
 C:/g3d/G3D10/data-files/shader/Light/Light.glsl
@@ -915,7 +903,6 @@ C:/g3d/data10/common/cubemap/uffizi/uffizi+z.jpg
 C:/g3d/data10/common/cubemap/uffizi/uffizi-x.jpg
 C:/g3d/data10/common/cubemap/uffizi/uffizi-y.jpg
 C:/g3d/data10/common/cubemap/uffizi/uffizi-z.jpg
-C:/g3d/data10/common/ifs/square.ifs
 C:/g3d/data10/common/model/crytek_sponza/sponza.ArticulatedModel.Any
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip
 C:/g3d/data10/common/model/crytek_sponza/sponza.zip/sponza.mtl
