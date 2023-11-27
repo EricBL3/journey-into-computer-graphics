@@ -36,4 +36,6 @@ public:
 
 private: 
     float m_cubeSize;
+    float m_cylinderRadius;
+    float m_cylinderHeight;
 };

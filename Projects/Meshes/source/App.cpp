@@ -188,14 +188,28 @@ void App::makeGUI() {
     //makeCube GUI controls
     GuiPane* makeCubePane = debugPane->addPane("Cube");
 
-    makeCubePane->addNumberBox("Cube Size", &m_cubeSize, "m", GuiTheme::LOG_SLIDER, 1.0f, 10.0f, 1.0f);
+    makeCubePane->addNumberBox("Size", &m_cubeSize, "m", GuiTheme::LOG_SLIDER, 1.0f, 10.0f, 1.0f);
 
     makeCubePane->addButton("Generate", [this]() {
-        msgBox("Generating the cube");
+        msgBox("Generating the cube...");
     });
 
     makeCubePane->moveRightOf(giPane);
-    makeCubePane->moveBy(275, 25);
+    makeCubePane->moveBy(275, 10);
+
+    //makeCylinder GUI controls
+    GuiPane* makeCylinderPane = debugPane->addPane("Cylinder");
+
+    makeCylinderPane->addNumberBox("Radius", &m_cylinderRadius, "m", GuiTheme::LOG_SLIDER, 1.0f, 10.0f, 1.0f);
+    makeCylinderPane->addNumberBox("Height", &m_cylinderHeight, "m", GuiTheme::LOG_SLIDER, 1.0f, 10.0f, 1.0f);
+
+    makeCylinderPane->addButton("Generate", [this]() {
+        msgBox("Generating the cylinder...");
+        });
+
+    makeCylinderPane->moveRightOf(giPane);
+    makeCylinderPane->moveBy(500, 10);
+
 
     debugWindow->pack();
     debugWindow->setRect(Rect2D::xywh(0, 0, (float)window()->width(), debugWindow->rect().height()));
