@@ -339,6 +339,31 @@ void App::onPose(Array<shared_ptr<Surface> >& surface, Array<shared_ptr<Surface2
     // Append any models to the arrays that you want to later be rendered by onGraphics()
 }
 
+/*
+* Generates a .off model of a cylinder with a given radius and height.
+*/
+void App::makeCylinder()
+{
+    //Make base circle points (vertices)
+    /*for i in sides_num:
+        angle = (2 * PI * i) / sides_num
+        x = -sin(angle) * radius
+        y = height * radius
+        z = cos(angle) * radius
+        add_vertex(x, y, z)*/
+
+
+    //Connect base points (indices)
+    /*for i in sides_num:
+        thisIndex = i
+        nextIndex = (i + 1) % n
+        add_indices()*/
+
+    //Make top circle points (adding just height)
+
+    //Connect top circle points
+}
+
 
 void App::onGraphics2D(RenderDevice* rd, Array<shared_ptr<Surface2D> >& posed2D) {
     // Render 2D objects like Widgets.  These do not receive tone mapping or gamma correction.
